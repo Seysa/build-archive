@@ -16,9 +16,8 @@
   <div id="weapons" class="mt-2">
     <div id="first-weapon">
       <div class="flex gap-2" id="eq-box-2">
-        <div class="equipment-slot">
+        <div>
           <div
-            class="equipment-slot-pvp"
             data-armory-embed="items"
             data-armory-ids="31652"
             data-armory-blank-text="ID not found"
@@ -26,15 +25,13 @@
           <small>Greatsword</small>
         </div>
         <div
-          class="equipment-slot"
           data-armory-embed="items"
           data-armory-ids="-1"
           data-armory-size="50"
           data-armory-blank-text="Empty slot"
         ></div>
-        <div class="equipment-slot">
+        <div>
           <div
-            class="equipment-slot-pvp"
             data-armory-embed="items"
             data-armory-ids="21150"
             data-armory-size="46"
@@ -42,9 +39,8 @@
           ></div>
           <small>Sigil</small>
         </div>
-        <div class="equipment-slot">
+        <div>
           <div
-            class="equipment-slot-pvp"
             data-armory-embed="items"
             data-armory-ids="21152"
             data-armory-size="46"
@@ -56,9 +52,8 @@
     </div>
     <div id="second-weapon">
       <div class="flex gap-2" id="eq-box-2">
-        <div class="equipment-slot">
+        <div>
           <div
-            class="equipment-slot-pvp"
             data-armory-embed="items"
             data-armory-ids="31291"
             data-armory-blank-text="ID not found"
@@ -66,15 +61,13 @@
           <small>Staff</small>
         </div>
         <div
-          class="equipment-slot"
           data-armory-embed="items"
           data-armory-ids="-1"
           data-armory-size="50"
           data-armory-blank-text="Empty slot"
         ></div>
-        <div class="equipment-slot">
+        <div>
           <div
-            class="equipment-slot-pvp"
             data-armory-embed="items"
             data-armory-ids="81245"
             data-armory-size="46"
@@ -82,9 +75,8 @@
           ></div>
           <small>Sigil</small>
         </div>
-        <div class="equipment-slot">
+        <div>
           <div
-            class="equipment-slot-pvp"
             data-armory-embed="items"
             data-armory-ids="21152"
             data-armory-size="46"
@@ -93,6 +85,26 @@
           <small>Sigil</small>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="flex gap-5">
+    <div>
+      <div
+        data-armory-embed="items"
+        data-armory-ids="21175"
+        data-armory-size="46"
+        data-armory-blank-text="ID not found"
+      ></div>
+      <small>Rune</small>
+    </div>
+    <div>
+      <div
+        data-armory-embed="amulets"
+        data-armory-ids="8"
+        data-armory-size="46"
+        data-armory-blank-text="ID not found"
+      ></div>
+      <small>Amulet</small>
     </div>
   </div>
 </template>
