@@ -20,3 +20,10 @@ import SkillsMallyx from "./components/SkillsMallyx.vue";
 import SkillsBrill from "./components/SkillsBrill.vue";
 import SkillsAlliance from "./components/SkillsAlliance.vue";
 </script>
+
+<style>
+#app {
+  min-height: 100vh;
+  background: url("./background.jpg");
+}
+</style>
