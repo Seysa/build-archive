@@ -24,6 +24,6 @@ import SkillsAlliance from "./components/SkillsAlliance.vue";
 <style>
 #app {
   min-height: 100vh;
-  background: url("./background.jpg");
+  background: url("/background.jpg");
 }
 </style>
