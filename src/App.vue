@@ -7,7 +7,7 @@
       <SkillsShiro />
       <SkillsKalla />
       <SkillsMallyx />
-      <SkillsBrill />
+      <SkillsGlint />
       <SkillsAlliance />
     </div>
   </div>
@@ -17,7 +17,7 @@ import RevenantVindicatorZerk from "./components/builds/RevenantVindicatorZerk.v
 import SkillsShiro from "./components/skills/SkillsShiro.vue";
 import SkillsKalla from "./components/skills/SkillsKalla.vue";
 import SkillsMallyx from "./components/skills/SkillsMallyx.vue";
-import SkillsBrill from "./components/skills/SkillsBrill.vue";
+import SkillsGlint from "./components/skills/SkillsGlint.vue";
 import SkillsAlliance from "./components/skills/SkillsAlliance.vue";
 </script>
 
