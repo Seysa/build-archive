@@ -1,14 +1,17 @@
-[
-  {
+{
+  "greatsword": {
     "name": "Greatsword",
-    "id": 31652
+    "id": "31652",
+    "twoHanded": true
   },
-  {
-    "name": "Staff",
-    "id": 31291
-  },
-  {
+  "sword": {
     "name": "Sword",
-    "id": 31292
+    "id": "31292",
+    "twoHanded": false
+  },
+  "staff": {
+    "name": "Staff",
+    "id": "31291",
+    "twoHanded": true
   }
-]
+}
