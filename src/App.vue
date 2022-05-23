@@ -13,12 +13,12 @@
   </div>
 </template>
 <script setup lang="ts">
-import RevenantVindicatorZerk from "./components/RevenantVindicatorZerk.vue";
-import SkillsShiro from "./components/SkillsShiro.vue";
-import SkillsKalla from "./components/SkillsKalla.vue";
-import SkillsMallyx from "./components/SkillsMallyx.vue";
-import SkillsBrill from "./components/SkillsBrill.vue";
-import SkillsAlliance from "./components/SkillsAlliance.vue";
+import RevenantVindicatorZerk from "./components/builds/RevenantVindicatorZerk.vue";
+import SkillsShiro from "./components/skills/SkillsShiro.vue";
+import SkillsKalla from "./components/skills/SkillsKalla.vue";
+import SkillsMallyx from "./components/skills/SkillsMallyx.vue";
+import SkillsBrill from "./components/skills/SkillsBrill.vue";
+import SkillsAlliance from "./components/skills/SkillsAlliance.vue";
 </script>
 
 <style>

@@ -112,8 +112,8 @@
 </template>
 
 <script lang="ts" setup>
-import SkillsShiro from "./SkillsShiro.vue";
-import SkillsAlliance from "./SkillsAlliance.vue";
+import SkillsShiro from "../skills/SkillsShiro.vue";
+import SkillsAlliance from "../skills/SkillsAlliance.vue";
 </script>
 
 <style>
