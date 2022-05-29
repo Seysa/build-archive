@@ -17,20 +17,7 @@
     <div id="weapons" class="flex items-center flex-col">
       <div id="first-weapon">
         <div class="flex gap-2" id="eq-box-2">
-          <div>
-            <div
-              data-armory-embed="items"
-              data-armory-ids="31652"
-              data-armory-blank-text="ID not found"
-            ></div>
-            <small>Greatsword</small>
-          </div>
-          <div
-            data-armory-embed="items"
-            data-armory-ids="-1"
-            data-armory-size="50"
-            data-armory-blank-text="Empty slot"
-          ></div>
+          <TwoHandedWeapon name="greatsword" />
           <div>
             <div
               data-armory-embed="items"
@@ -53,20 +40,7 @@
       </div>
       <div id="second-weapon">
         <div class="flex gap-2" id="eq-box-2">
-          <div>
-            <div
-              data-armory-embed="items"
-              data-armory-ids="31291"
-              data-armory-blank-text="ID not found"
-            ></div>
-            <small>Staff</small>
-          </div>
-          <div
-            data-armory-embed="items"
-            data-armory-ids="-1"
-            data-armory-size="50"
-            data-armory-blank-text="Empty slot"
-          ></div>
+          <TwoHandedWeapon name="staff" />
           <div>
             <div
               data-armory-embed="items"
@@ -109,11 +83,17 @@
       </div>
     </div>
   </div>
+  <BuildCode
+    code="[&DQkJGwMZRT3cEdwR1BEGEgYSKxIrEtQRyhHKEQcCAgMGEisS1BEAAAAAAAA=]"
+  />
 </template>
 
 <script lang="ts" setup>
 import SkillsShiro from "../skills/SkillsShiro.vue";
 import SkillsAlliance from "../skills/SkillsAlliance.vue";
+import BuildCode from "../BuildCode.vue";
+import SetOfWeapons from "../items/weapons/SetOfWeapons.vue";
+import TwoHandedWeapon from "../items/weapons/TwoHandedWeapon.vue";
 </script>
 
 <style>

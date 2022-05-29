@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex flex-col items-center">
     <div
       data-armory-embed="items"
       :data-armory-ids="id"
