@@ -7,7 +7,7 @@
 
 <script lang="ts" setup>
 import ItemSlot from "../ItemSlot.vue";
-import weapons from "../../../utils/weapons.json";
+import { weapons } from "../../../utils/weapons";
 
 const props = defineProps<{
   name: string;

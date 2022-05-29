@@ -25,12 +25,11 @@ import SkillsMallyx from "../components/skills/SkillsMallyx.vue";
 import SkillsGlint from "../components/skills/SkillsGlint.vue";
 import SkillsAlliance from "../components/skills/SkillsAlliance.vue";
 import TwoHandedWeapon from "./items/weapons/TwoHandedWeapon.vue";
-import weapons from "../utils/weapons.json";
+import { weapons } from "../utils/weapons";
 
 const twoHandedWeapons: string[] = [];
 const oneHandedWeapons: string[] = [];
 Object.entries(weapons).forEach(([name, value]) => {
-  console.log(name, value);
   (value.twoHanded ? twoHandedWeapons : oneHandedWeapons).push(name);
 });
 </script>
