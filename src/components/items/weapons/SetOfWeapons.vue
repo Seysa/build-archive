@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Weapon } from "../../../utils/weapons";
+import { Weapon } from "../../../utils/stuff";
 import OneWeapon from "./OneWeapon.vue";
 
 defineProps<{
