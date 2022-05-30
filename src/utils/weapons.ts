@@ -4,7 +4,7 @@ export type Weapon = {
   twoHanded: boolean;
 };
 
-export const weapons: Record<string, Weapon> = {
+export const weapons = {
   greatsword: {
     name: "Greatsword",
     id: "31652",

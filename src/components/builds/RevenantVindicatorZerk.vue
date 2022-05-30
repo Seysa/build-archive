@@ -1,6 +1,6 @@
 <template>
-  <h1 class="text-2xl">Vindicator</h1>
-  <div class="flex flex-wrap gap-3 justify-center mb-3">
+  <h1 class="text-2xl text-center">Tanky Vindicator Zerk</h1>
+  <div class="flex flex-wrap gap-3 justify-center my-3">
     <SkillsShiro />
     <SkillsAlliance />
   </div>
@@ -17,7 +17,7 @@
     <div id="weapons" class="flex items-center flex-col">
       <div id="first-weapon">
         <div class="flex gap-2" id="eq-box-2">
-          <TwoHandedWeapon name="greatsword" />
+          <TwoHandedWeapon :weapon="weapons.greatsword" />
           <div>
             <div
               data-armory-embed="items"
@@ -40,7 +40,7 @@
       </div>
       <div id="second-weapon">
         <div class="flex gap-2" id="eq-box-2">
-          <TwoHandedWeapon name="staff" />
+          <TwoHandedWeapon :weapon="weapons.staff" />
           <div>
             <div
               data-armory-embed="items"
@@ -92,8 +92,8 @@
 import SkillsShiro from "../skills/SkillsShiro.vue";
 import SkillsAlliance from "../skills/SkillsAlliance.vue";
 import BuildCode from "../BuildCode.vue";
-import SetOfWeapons from "../items/weapons/SetOfWeapons.vue";
 import TwoHandedWeapon from "../items/weapons/TwoHandedWeapon.vue";
+import { weapons } from "../../utils/weapons";
 </script>
 
 <style>

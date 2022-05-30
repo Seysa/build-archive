@@ -10,11 +10,11 @@
   </div>
   <h2 class="section">Two handed weapons</h2>
   <div class="flex flex-col justify-center items-center gap-5">
-    <TwoHandedWeapon v-for="weapon in twoHandedWeapons" :name="weapon" />
+    <TwoHandedWeapon v-for="weapon in twoHandedWeapons" :weapon="weapon" />
   </div>
   <h2 class="section">One handed weapons</h2>
   <div class="flex flex-col justify-center items-center gap-5">
-    <TwoHandedWeapon v-for="weapon in oneHandedWeapons" :name="weapon" />
+    <TwoHandedWeapon v-for="weapon in oneHandedWeapons" :weapon="weapon" />
   </div>
 </template>
 
@@ -25,12 +25,12 @@ import SkillsMallyx from "../components/skills/SkillsMallyx.vue";
 import SkillsGlint from "../components/skills/SkillsGlint.vue";
 import SkillsAlliance from "../components/skills/SkillsAlliance.vue";
 import TwoHandedWeapon from "./items/weapons/TwoHandedWeapon.vue";
-import { weapons } from "../utils/weapons";
+import { Weapon, weapons } from "../utils/weapons";
 
-const twoHandedWeapons: string[] = [];
-const oneHandedWeapons: string[] = [];
-Object.entries(weapons).forEach(([name, value]) => {
-  (value.twoHanded ? twoHandedWeapons : oneHandedWeapons).push(name);
+const twoHandedWeapons: Weapon[] = [];
+const oneHandedWeapons: Weapon[] = [];
+Object.values(weapons).forEach((value) => {
+  (value.twoHanded ? twoHandedWeapons : oneHandedWeapons).push(value);
 });
 </script>
 

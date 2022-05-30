@@ -1,18 +1,16 @@
 <template>
   <div class="flex gap-4">
-    <ItemSlot :name="weapon.name" :id="weapon.id" />
+    <OneWeapon :weapon="weapon" />
     <ItemSlot id="-1" />
   </div>
 </template>
 
 <script lang="ts" setup>
 import ItemSlot from "../ItemSlot.vue";
-import { weapons } from "../../../utils/weapons";
+import { Weapon } from "../../../utils/weapons";
+import OneWeapon from "./OneWeapon.vue";
 
-const props = defineProps<{
-  name: string;
+defineProps<{
+  weapon: Weapon;
 }>();
-const weapon = (weapons as Record<string, { name: string; id: string }>)[
-  props.name
-];
 </script>

@@ -1,15 +1,16 @@
 <template>
   <div>
-    <OneWeapon :name="first" />
-    <OneWeapon :name="second" />
+    <OneWeapon :weapon="first" />
+    <OneWeapon :weapon="second" />
   </div>
 </template>
 
 <script lang="ts" setup>
+import { Weapon } from "../../../utils/weapons";
 import OneWeapon from "./OneWeapon.vue";
 
 defineProps<{
-  first: string;
-  second: string;
+  first: Weapon;
+  second: Weapon;
 }>();
 </script>
