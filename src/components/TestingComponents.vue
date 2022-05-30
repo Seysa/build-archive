@@ -25,7 +25,7 @@ import SkillsMallyx from "../components/skills/SkillsMallyx.vue";
 import SkillsGlint from "../components/skills/SkillsGlint.vue";
 import SkillsAlliance from "../components/skills/SkillsAlliance.vue";
 import TwoHandedWeapon from "./items/weapons/TwoHandedWeapon.vue";
-import { Weapon, weapons } from "../utils/weapons";
+import { Weapon, weapons } from "../utils/stuff";
 
 const twoHandedWeapons: Weapon[] = [];
 const oneHandedWeapons: Weapon[] = [];

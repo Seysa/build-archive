@@ -93,7 +93,7 @@ import SkillsShiro from "../skills/SkillsShiro.vue";
 import SkillsAlliance from "../skills/SkillsAlliance.vue";
 import BuildCode from "../BuildCode.vue";
 import TwoHandedWeapon from "../items/weapons/TwoHandedWeapon.vue";
-import { weapons } from "../../utils/weapons";
+import { weapons } from "../../utils/stuff";
 </script>
 
 <style>
