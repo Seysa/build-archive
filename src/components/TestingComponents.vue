@@ -7,6 +7,8 @@
     <SkillsMallyx />
     <SkillsGlint />
     <SkillsAlliance />
+    <SkillsJalis />
+    <SkillsVentari />
   </div>
   <h2 class="section">Two handed weapons</h2>
   <div class="flex flex-col justify-center items-center gap-5">
@@ -24,6 +26,8 @@ import SkillsKalla from "../components/skills/SkillsKalla.vue";
 import SkillsMallyx from "../components/skills/SkillsMallyx.vue";
 import SkillsGlint from "../components/skills/SkillsGlint.vue";
 import SkillsAlliance from "../components/skills/SkillsAlliance.vue";
+import SkillsJalis from "./skills/SkillsJalis.vue";
+import SkillsVentari from "./skills/SkillsVentari.vue";
 import TwoHandedWeapon from "./items/weapons/TwoHandedWeapon.vue";
 import { Weapon, weapons } from "../utils/stuff";
 
