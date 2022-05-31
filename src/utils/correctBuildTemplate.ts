@@ -1,0 +1,15 @@
+import Buildtemplate from "./BuildTemplate";
+import convert from "./TraitConverter";
+
+export default async function correctBuildTemplate(buildCode: string) {
+  const build = new Buildtemplate(buildCode);
+  for (let i = 0; i < 3; i++) {
+    build.specializations[i].traits = await convert(
+      build.specializations[i].id,
+      build.specializations[i].traits
+    );
+  }
+
+  console.log("correct build is", build.specializations);
+  return build;
+}
