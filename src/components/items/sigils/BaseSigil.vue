@@ -1,11 +1,12 @@
 <template>
-  <ItemSlot :id="weapon.id" :name="weapon.name" />
+  <ItemSlot :id="sigil.id" name="Sigil" :size="46" />
 </template>
 
 <script lang="ts" setup>
+import { Sigil } from "../../../utils/stuff";
 import ItemSlot from "../ItemSlot.vue";
-import { Weapon } from "../../../utils/stuff";
+
 defineProps<{
-  weapon: Weapon;
+  sigil: Sigil;
 }>();
 </script>

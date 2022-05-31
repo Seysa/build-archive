@@ -1,6 +1,9 @@
-export type Weapon = {
+export type Item = {
   name: string;
   id: string;
+};
+
+export type Weapon = Item & {
   twoHanded: boolean;
 };
 
@@ -19,5 +22,22 @@ export const weapons = {
     name: "Staff",
     id: "31291",
     twoHanded: true,
+  },
+};
+
+export type Sigil = Item;
+
+export const sigils = {
+  doom: {
+    name: "Sigil of Doom",
+    id: "21150",
+  },
+  energy: {
+    name: "Sigil of Energy",
+    id: "21152",
+  },
+  exploitation: {
+    name: "Sigil of Exploitation",
+    id: "81245",
   },
 };

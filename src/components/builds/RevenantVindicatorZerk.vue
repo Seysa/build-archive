@@ -16,49 +16,17 @@
   <div id="stuff" class="flex gap-2 mt-2 justify-center">
     <div id="weapons" class="flex items-center flex-col">
       <div id="first-weapon">
-        <div class="flex gap-2" id="eq-box-2">
+        <div class="flex gap-2">
           <TwoHandedWeapon :weapon="weapons.greatsword" />
-          <div>
-            <div
-              data-armory-embed="items"
-              data-armory-ids="21150"
-              data-armory-size="46"
-              data-armory-blank-text="ID not found"
-            ></div>
-            <small>Sigil</small>
-          </div>
-          <div>
-            <div
-              data-armory-embed="items"
-              data-armory-ids="21152"
-              data-armory-size="46"
-              data-armory-blank-text="ID not found"
-            ></div>
-            <small>Sigil</small>
-          </div>
+          <BaseSigil :sigil="sigils.doom" />
+          <BaseSigil :sigil="sigils.energy" />
         </div>
       </div>
       <div id="second-weapon">
-        <div class="flex gap-2" id="eq-box-2">
+        <div class="flex gap-2">
           <TwoHandedWeapon :weapon="weapons.staff" />
-          <div>
-            <div
-              data-armory-embed="items"
-              data-armory-ids="81245"
-              data-armory-size="46"
-              data-armory-blank-text="ID not found"
-            ></div>
-            <small>Sigil</small>
-          </div>
-          <div>
-            <div
-              data-armory-embed="items"
-              data-armory-ids="21152"
-              data-armory-size="46"
-              data-armory-blank-text="ID not found"
-            ></div>
-            <small>Sigil</small>
-          </div>
+          <BaseSigil :sigil="sigils.exploitation" />
+          <BaseSigil :sigil="sigils.energy" />
         </div>
       </div>
     </div>
@@ -93,7 +61,8 @@ import SkillsShiro from "../skills/SkillsShiro.vue";
 import SkillsAlliance from "../skills/SkillsAlliance.vue";
 import BuildCode from "../BuildCode.vue";
 import TwoHandedWeapon from "../items/weapons/TwoHandedWeapon.vue";
-import { weapons } from "../../utils/stuff";
+import { weapons, sigils } from "../../utils/stuff";
+import BaseSigil from "../items/sigils/BaseSigil.vue";
 </script>
 
 <style>
