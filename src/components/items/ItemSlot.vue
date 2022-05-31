@@ -1,7 +1,7 @@
 <template>
   <div
     id="item"
-    class="flex flex-col items-center bg-gray-600 bg-opacity-80 text-white p-1 rounded"
+    class="flex flex-col items-center bg-gray-600 bg-opacity-70 text-white p-1"
   >
     <div
       data-armory-embed="items"
