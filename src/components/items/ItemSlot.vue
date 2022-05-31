@@ -1,5 +1,8 @@
 <template>
-  <div class="flex flex-col items-center">
+  <div
+    id="item"
+    class="flex flex-col items-center bg-gray-600 bg-opacity-80 text-white p-1 rounded"
+  >
     <div
       data-armory-embed="items"
       :data-armory-ids="id"
@@ -18,3 +21,9 @@ defineProps<{
   size?: number;
 }>();
 </script>
+
+<style scoped>
+#item {
+  min-width: 7rem;
+}
+</style>

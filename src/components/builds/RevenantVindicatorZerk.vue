@@ -15,27 +15,22 @@
   ></div>
   <div id="stuff" class="flex gap-2 mt-2 justify-center">
     <div id="weapons" class="flex items-center flex-col">
-      <div id="first-weapon">
-        <div class="flex gap-2">
-          <TwoHandedWeapon :weapon="weapons.greatsword" />
-          <BaseSigil :sigil="sigils.doom" />
-          <BaseSigil :sigil="sigils.energy" />
-        </div>
+      <div id="first-weapon" class="flex my-2 border rounded">
+        <TwoHandedWeapon :weapon="weapons.greatsword" />
+        <BaseSigil :sigil="sigils.doom" />
+        <BaseSigil :sigil="sigils.energy" />
       </div>
-      <div id="second-weapon">
-        <div class="flex gap-2">
-          <TwoHandedWeapon :weapon="weapons.staff" />
-          <BaseSigil :sigil="sigils.exploitation" />
-          <BaseSigil :sigil="sigils.energy" />
-        </div>
+      <div id="second-weapon" class="flex my-2 border rounded">
+        <TwoHandedWeapon :weapon="weapons.staff" />
+        <BaseSigil :sigil="sigils.exploitation" />
+        <BaseSigil :sigil="sigils.energy" />
       </div>
     </div>
-    <div class="flex flex-col gap-5">
+    <div class="flex flex-col gap-1">
       <div>
         <div
           data-armory-embed="items"
           data-armory-ids="21175"
-          data-armory-size="46"
           data-armory-blank-text="ID not found"
         ></div>
         <small>Rune</small>
@@ -44,7 +39,6 @@
         <div
           data-armory-embed="amulets"
           data-armory-ids="8"
-          data-armory-size="46"
           data-armory-blank-text="ID not found"
         ></div>
         <small>Amulet</small>

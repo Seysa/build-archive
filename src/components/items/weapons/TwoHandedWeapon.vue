@@ -1,5 +1,5 @@
 <template>
-  <div class="flex gap-4">
+  <div class="flex">
     <OneWeapon :weapon="weapon" />
     <ItemSlot id="-1" />
   </div>
