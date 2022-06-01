@@ -13,7 +13,6 @@ import { ref, onMounted } from "vue";
 const props = defineProps<{
   traits: { id: number; traits: number[] }[];
 }>();
-console.log("BuildTraits got", props.traits);
 const armoryIds = props.traits.map((el) => el.id).join(",");
 
 const skills = ref<null | HTMLElement>(null);
