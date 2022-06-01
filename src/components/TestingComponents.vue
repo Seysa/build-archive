@@ -1,7 +1,7 @@
 <template>
   <h1 class="text-4xl text-center my-5 border-t-2 border-black">TESTS</h1>
   <h2 class="section">Stances</h2>
-  <div class="flex flex-wrap justify-center gap-5">
+  <!-- <div class="flex flex-wrap justify-center gap-5">
     <SkillsShiro />
     <SkillsKalla />
     <SkillsMallyx />
@@ -9,7 +9,7 @@
     <SkillsAlliance />
     <SkillsJalis />
     <SkillsVentari />
-  </div>
+  </div> -->
   <h2 class="section">Two handed weapons</h2>
   <div class="flex flex-col justify-center items-center gap-5">
     <TwoHandedWeapon v-for="weapon in twoHandedWeapons" :weapon="weapon" />
@@ -18,17 +18,23 @@
   <div class="flex flex-col justify-center items-center gap-5">
     <TwoHandedWeapon v-for="weapon in oneHandedWeapons" :weapon="weapon" />
   </div>
+  <h2 class="section">Build</h2>
+  <BaseBuild
+    name="Test build"
+    code="[&DQkJGwMZRT3cEdwR1BEGEgYSKxIrEtQRyhHKEQcCAgMGEisS1BEAAAAAAAA=]"
+  />
 </template>
 
 <script lang="ts" setup>
-import SkillsShiro from "../components/skills/SkillsShiro.vue";
+/* import SkillsShiro from "../components/skills/SkillsShiro.vue";
 import SkillsKalla from "../components/skills/SkillsKalla.vue";
 import SkillsMallyx from "../components/skills/SkillsMallyx.vue";
 import SkillsGlint from "../components/skills/SkillsGlint.vue";
 import SkillsAlliance from "../components/skills/SkillsAlliance.vue";
 import SkillsJalis from "./skills/SkillsJalis.vue";
-import SkillsVentari from "./skills/SkillsVentari.vue";
+import SkillsVentari from "./skills/SkillsVentari.vue"; */
 import TwoHandedWeapon from "./items/weapons/TwoHandedWeapon.vue";
+import BaseBuild from "./builds/BaseBuild.vue";
 import { Weapon, weapons } from "../utils/stuff";
 
 const twoHandedWeapons: Weapon[] = [];
