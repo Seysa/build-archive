@@ -30,6 +30,12 @@ const routes: Array<RouteRecordRaw> = [
     props: true,
     component: importView("vindicator"),
   },
+  {
+    path: "/builds/herald/:name",
+    name: "Herald",
+    props: true,
+    component: importView("herald"),
+  },
 ];
 
 const router = createRouter({
