@@ -1,6 +1,6 @@
 <template>
   <nav class="flex justify-center gap-8 text-2xl text-white transition-all">
-    <router-link to="/">Home</router-link>
+    <a href="/">Home</a>
     <router-link to="/traitmaker">Trait Maker</router-link>
     <router-link to="/builds">Builds</router-link>
   </nav>
