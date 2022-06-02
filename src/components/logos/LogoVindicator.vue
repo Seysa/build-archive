@@ -1,5 +1,7 @@
 <template>
-  <img alt="Vindicator" src="vindicator.png" />
+  <img alt="Vindicator" :src="vindicator" />
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import vindicator from "../../assets/vindicator.png";
+</script>
