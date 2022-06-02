@@ -10,6 +10,5 @@ export default async function correctBuildTemplate(buildCode: string) {
     );
   }
 
-  console.log("correct build is", build.specializations);
   return build;
 }
