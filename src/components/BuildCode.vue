@@ -5,8 +5,11 @@
     <span class="text-white p-1 bg-stone-800 rounded">{{ code }}</span>
     <button
       @click="copyCodeInClipboard"
-      class="bg-white hover:bg-gray-300 text-black p-1 rounded transition-colors"
-      :class="{ 'bg-gray-500': justCopied }"
+      class="hover:bg-gray-400 p-1 rounded transition-colors"
+      :class="{
+        'bg-black text-white': justCopied,
+        'bg-white text-black': !justCopied,
+      }"
     >
       {{ buttonText }}
     </button>
