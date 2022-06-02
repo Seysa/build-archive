@@ -1,4 +1,5 @@
 <template>
+  <img id="background" :src="background" class="w-full h-full fixed -z-10" />
   <nav class="flex justify-center gap-8 text-2xl text-white transition-all">
     <a href="/">Home</a>
     <router-link to="/traitmaker">Trait Maker</router-link>
@@ -13,12 +14,12 @@
     </div>
   </main>
 </template>
-<script setup lang="ts"></script>
+
+<script lang="ts" setup>
+import background from "./assets/background.jpg";
+</script>
 
 <style>
-body {
-  background: url("../background.jpg");
-}
 nav a {
   @apply px-2;
 }
