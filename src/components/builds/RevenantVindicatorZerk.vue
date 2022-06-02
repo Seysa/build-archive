@@ -4,7 +4,15 @@
     <SkillsShiro />
     <SkillsAlliance />
   </div>
-  <BuildTraits v-if="traits.length" :traits="traits" />
+  <div
+    id="skills"
+    data-armory-embed="specializations"
+    data-armory-ids="9,3,69"
+    data-armory-9-traits="1810,1782,1779"
+    data-armory-3-traits="1732,1760,1749"
+    data-armory-69-traits="2258,2255,2238"
+    class="mx-auto"
+  ></div>
 
   <div id="stuff" class="flex gap-2 mt-2 justify-center">
     <div id="weapons" class="flex items-center flex-col">
