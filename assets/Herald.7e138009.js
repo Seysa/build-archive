@@ -1,1 +1,0 @@
-import{h as n,_ as s}from"./builds.b0fa8439.js";import{d as a,g as r,u as t,o as p}from"./index.bca331c2.js";const d=a({props:{name:null},setup(o){const e=n[o.name];return(l,u)=>(p(),r(s,{build:t(e)},null,8,["build"]))}});export{d as default};
