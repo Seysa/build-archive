@@ -4,6 +4,10 @@
       class="flex flex-col gap-4 justify-center"
       @submit.prevent="showBuild"
     >
+      <p class="text-gray-400">
+        Build code decoder made by
+        <BaseLink href="http://www.thatshaman.com">that_shaman</BaseLink>.
+      </p>
       <div class="flex justify-center items-center gap-2">
         <span>Enter your code: </span
         ><input
@@ -33,7 +37,7 @@
           outputJSON
         }}</pre>
       </div>
-      <h2 v-else-if="clicked && !invalidCode">Chargement...</h2>
+      <h2 v-else-if="clicked && !invalidCode">Loading...</h2>
     </div>
   </div>
 </template>
@@ -41,6 +45,7 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 import correctBuildTemplate from "../utils/correctBuildTemplate";
+import BaseLink from "../components/BaseLink.vue";
 const buildCode = ref(
   "[&DQkJGwMZRT3cEdwR1BEGEgYSKxIrEtQRyhHKEQcCAgMGEisS1BEAAAAAAAA=]"
 );
