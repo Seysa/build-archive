@@ -2,7 +2,7 @@
  * @author that_shaman
  */
 
-export default class Buildtemplate {
+export default class BuildTemplate {
   profession = 1;
   specializations = [
     {
