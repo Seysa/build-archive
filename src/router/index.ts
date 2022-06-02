@@ -19,6 +19,17 @@ const routes: Array<RouteRecordRaw> = [
     name: "Trait Maker",
     component: importView("traitMaker"),
   },
+  {
+    path: "/builds",
+    name: "Builds",
+    component: importView("builds"),
+  },
+  {
+    path: "/builds/vindicator/:name",
+    name: "Vindicator",
+    props: true,
+    component: importView("vindicator"),
+  },
 ];
 
 const router = createRouter({

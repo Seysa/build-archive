@@ -19,7 +19,10 @@
         Submit
       </button>
     </form>
-    <div id="result" class="whitespace-pre-line flex justify-center mt-2">
+    <div
+      id="result"
+      class="whitespace-pre-line flex flex-col justify-center mt-2"
+    >
       <code v-if="outputHTML" class="bg-black text-white px-4 py-1 rounded">{{
         outputHTML
       }}</code>
@@ -40,18 +43,18 @@ const clicked = ref(false);
 
 async function showBuild() {
   clicked.value = true;
-  const array: string[] = [];
-  console.log("Treating build", buildCode.value);
+  const traitsAttributes: string[] = [];
   const build = await correctBuildTemplate(buildCode.value);
-  console.log("Corrected build", build);
   build.specializations.forEach((trait) => {
-    array.push(`data-armory-${trait.id}-traits="${trait.traits.join(",")}"`);
+    traitsAttributes.push(
+      `data-armory-${trait.id}-traits="${trait.traits.join(",")}"`
+    );
   });
   const dataArmoryIds = build.specializations.map((el) => el.id).join(",");
   outputHTML.value = `<div
   data-armory-embed="specializations"
   data-armory-ids="${dataArmoryIds}"
-  ${array.join("\n")}
+  ${traitsAttributes.join("\n")}
   ></div>`;
 }
 </script>

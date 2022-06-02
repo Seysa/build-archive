@@ -2,14 +2,13 @@
   <nav class="flex justify-center gap-8 text-2xl text-white transition-all">
     <router-link to="/">Home</router-link>
     <router-link to="/traitmaker">Trait Maker</router-link>
+    <router-link to="/builds">Builds</router-link>
   </nav>
   <main>
     <h1 class="text-4xl text-white font-bold text-center p-2">
       Garion's builds
     </h1>
-    <div
-      class="container mx-auto bg-gray-200 bg-opacity-50 shadow-xl p-2 rounded"
-    >
+    <div class="container mx-auto bg-gray-900 shadow-xl p-2 rounded text-white">
       <router-view></router-view>
     </div>
   </main>
@@ -17,8 +16,7 @@
 <script setup lang="ts"></script>
 
 <style>
-#app {
-  min-height: 100vh;
+body {
   background: url("../background.jpg");
 }
 nav a {
