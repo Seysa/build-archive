@@ -7,8 +7,11 @@
       <SecondStance />
     </div>
     <BuildTraits :traits="build.build.specializations" />
-    <div id="stuff" class="flex gap-2 mt-2 justify-center">
-      <!-- TODO: amulet and rune -->
+    <div
+      id="stuff"
+      class="flex flex-col gap-2 mt-2 justify-center items-center"
+    >
+      <span>{{ build.amulet }} - {{ build.rune }}</span>
       <BuildCode :code="build.code" />
     </div>
   </div>
