@@ -1,7 +1,6 @@
 <template>
   <div
     ref="skills"
-    id="skills"
     :data-armory-ids="armoryIds"
     class="flex flex-col gap-2 mx-auto"
     data-armory-embed="specializations"
@@ -26,3 +25,9 @@ onMounted(() => {
   });
 });
 </script>
+
+<style scoped>
+div {
+  width: 650px;
+}
+</style>
