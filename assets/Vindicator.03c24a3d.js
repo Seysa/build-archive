@@ -1,1 +1,0 @@
-import{v as s,_ as a}from"./builds.cdd866cd.js";import{d as e,f as r,u as t,o as c}from"./index.d989004f.js";const f=e({props:{name:null},setup(o){const n=s[o.name];return(u,i)=>(c(),r(a,{build:t(n)},null,8,["build"]))}});export{f as default};
