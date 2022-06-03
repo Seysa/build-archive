@@ -129,7 +129,7 @@ export const herald: Record<string, Build> = {
     name: "Power",
     description: "",
     code: "[&DQkPLgMZNCvcEQAABhIAACsSAADUEQAAyhEAAAIBAAAGEisS1BEAAAAAAAA=]",
-    amulet: "zerk",
+    amulet: "berserker",
     rune: "divinity",
     build: {
       profession: 9,
@@ -166,7 +166,7 @@ export const herald: Record<string, Build> = {
     name: "Condi",
     description: "",
     code: "[&DQkOFQMXNCbcEdwRBhIGEisSKxLUEdQRyhHKEQIEAgQGEtQRKxIGEtQRKxI=]",
-    amulet: "zerk",
+    amulet: "berserker",
     rune: "divinity",
     build: {
       profession: 9,
