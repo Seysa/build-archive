@@ -4,20 +4,23 @@
     <div class="ml-2">
       <h2 class="text-3xl flex gap-2"><LogoVindicator />Vindicator</h2>
       <div class="ml-[0.93rem] pl-2 border-l-2 border-orange-500 my-2">
-        <router-link to="/builds/vindicator/full-zerk" class="build"
-          >full zerk</router-link
+        <router-link
+          class="build"
+          v-for="(value, field) in vindicator"
+          :to="`/builds/vindicator/${field}`"
         >
-        <router-link to="/builds/vindicator/50-50-zerk" class="build"
-          >50-50 zerk</router-link
-        >
-        <router-link to="/builds/vindicator/tanky-zerk" class="build"
-          >tanky zerk</router-link
+          {{ field }} - {{ value.amulet }} - {{ value.rune }}</router-link
         >
       </div>
       <h2 class="text-3xl flex gap-2"><LogoHerald /> Herald</h2>
       <div class="ml-[0.93rem] pl-2 border-l-2 border-sky-500 my-2">
-        <router-link to="/builds/herald/power" class="build">power</router-link>
-        <router-link to="/builds/herald/condi" class="build">condi</router-link>
+        <router-link
+          class="build"
+          v-for="(value, field) in herald"
+          :to="`/builds/herald/${field}`"
+        >
+          {{ field }} - {{ value.amulet }} - {{ value.rune }}</router-link
+        >
       </div>
     </div>
   </div>
@@ -27,6 +30,7 @@
 import LogoVindicator from "../components/logos/LogoVindicator.vue";
 import LogoHerald from "../components/logos/LogoHerald.vue";
 import LogoCore from "../components/logos/LogoCore.vue";
+import { vindicator, herald } from "../utils/builds";
 </script>
 
 <style scoped>
