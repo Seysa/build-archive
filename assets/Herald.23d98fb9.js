@@ -1,1 +1,0 @@
-import{_ as a}from"./BaseBuild.90b17d91.js";import{h as e}from"./builds.b34fd9d8.js";import{d as n,a as s,u as t,o as p}from"./index.e0394731.js";const d=n({props:{name:null},setup(o){const r=e[o.name];return(l,m)=>(p(),s(a,{build:t(r)},null,8,["build"]))}});export{d as default};
