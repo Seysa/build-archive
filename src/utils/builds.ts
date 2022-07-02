@@ -1,28 +1,58 @@
 import BuildTemplate from "./BuildTemplate";
+import { Sigil, sigils, Weapon, weapons } from "./stuff";
+
+export type Weapons = {
+  slot1: Weapon;
+  slot2?: Weapon;
+  sigils: {
+    first: Sigil;
+    second: Sigil;
+  };
+};
 
 export type Build = {
   name: string;
-  description: string;
+  description?: string;
   // remove methods from class to have only the properties
   build: Omit<BuildTemplate, "parse" | "toString">;
   code: string;
   amulet: string;
   rune: string;
+  weapons: {
+    first: Weapons;
+    second: Weapons;
+  };
 };
 
 export const vindicator: Record<string, Build> = {
   "full-zerk": {
     name: "Full Zerk",
-    description: "",
-    code: "[&DQkJGwMZRT3cEdwR1BEGEgYSKxIrEtQRyhHKEQcCAgMGEisS1BEAAAAAAAA=]",
+    code: "[&DQkPKgMZRR3cEdwR1BEGEgYSKxIrEtQRyhHKEQcCAgMGEisS1BEAAAAAAAA=]",
     amulet: "berserker",
     rune: "divinity",
+    weapons: {
+      first: {
+        slot1: weapons.greatsword,
+        sigils: {
+          first: sigils.energy,
+          second: sigils.exploitation,
+        },
+      },
+      second: {
+        slot1: weapons.sword,
+        slot2: weapons.sword,
+        sigils: {
+          first: sigils.energy,
+          second: sigils.doom,
+        },
+      },
+    },
     build: {
       profession: 9,
       specializations: [
         {
-          id: 9,
-          traits: [1810, 1782, 1779],
+          id: 15,
+          traits: [1767, 1765, 1800],
         },
         {
           id: 3,
@@ -30,7 +60,7 @@ export const vindicator: Record<string, Build> = {
         },
         {
           id: 69,
-          traits: [2258, 2255, 2238],
+          traits: [2258, 2255, 2257],
         },
       ],
       skills: {
@@ -50,16 +80,31 @@ export const vindicator: Record<string, Build> = {
   },
   "50-50-zerk": {
     name: "50-50 Zerk",
-    description: "",
     code: "[&DQkJGwMZRT3cEdwR1BEGEgYSKxIrEtQRyhHKEQcCAgMGEisS1BEAAAAAAAA=]",
     amulet: "berserker",
     rune: "divinity",
+    weapons: {
+      first: {
+        slot1: weapons.greatsword,
+        sigils: {
+          first: sigils.energy,
+          second: sigils.exploitation,
+        },
+      },
+      second: {
+        slot1: weapons.staff,
+        sigils: {
+          first: sigils.energy,
+          second: sigils.doom,
+        },
+      },
+    },
     build: {
       profession: 9,
       specializations: [
         {
           id: 15,
-          traits: [1767, 1802, 1754],
+          traits: [1767, 1765, 1800],
         },
         {
           id: 3,
@@ -67,7 +112,7 @@ export const vindicator: Record<string, Build> = {
         },
         {
           id: 69,
-          traits: [2258, 2255, 2238],
+          traits: [2258, 2255, 2257],
         },
       ],
       skills: {
@@ -87,10 +132,25 @@ export const vindicator: Record<string, Build> = {
   },
   "tanky-zerk": {
     name: "Tanky Zerk",
-    description: "",
     code: "[&DQkJGwMZRT3cEdwR1BEGEgYSKxIrEtQRyhHKEQcCAgMGEisS1BEAAAAAAAA=]",
     amulet: "berserker",
     rune: "divinity",
+    weapons: {
+      first: {
+        slot1: weapons.greatsword,
+        sigils: {
+          first: sigils.energy,
+          second: sigils.exploitation,
+        },
+      },
+      second: {
+        slot1: weapons.staff,
+        sigils: {
+          first: sigils.energy,
+          second: sigils.doom,
+        },
+      },
+    },
     build: {
       profession: 9,
       specializations: [
@@ -127,10 +187,26 @@ export const vindicator: Record<string, Build> = {
 export const herald: Record<string, Build> = {
   power: {
     name: "Power",
-    description: "",
     code: "[&DQkPLgMZNCvcEQAABhIAACsSAADUEQAAyhEAAAIBAAAGEisS1BEAAAAAAAA=]",
     amulet: "berserker",
     rune: "divinity",
+    weapons: {
+      first: {
+        slot1: weapons.sword,
+        slot2: weapons.sword,
+        sigils: {
+          first: sigils.exploitation,
+          second: sigils.energy,
+        },
+      },
+      second: {
+        slot1: weapons.staff,
+        sigils: {
+          first: sigils.cleansing,
+          second: sigils.doom,
+        },
+      },
+    },
     build: {
       profession: 9,
       specializations: [
@@ -164,10 +240,26 @@ export const herald: Record<string, Build> = {
   },
   condi: {
     name: "Condi",
-    description: "",
     code: "[&DQkOFQMXNCbcEdwRBhIGEisSKxLUEdQRyhHKEQIEAgQGEtQRKxIGEtQRKxI=]",
     amulet: "berserker",
     rune: "divinity",
+    weapons: {
+      first: {
+        slot1: weapons.sword,
+        slot2: weapons.sword,
+        sigils: {
+          first: sigils.exploitation,
+          second: sigils.energy,
+        },
+      },
+      second: {
+        slot1: weapons.staff,
+        sigils: {
+          first: sigils.energy,
+          second: sigils.doom,
+        },
+      },
+    },
     build: {
       profession: 9,
       specializations: [
